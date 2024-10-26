@@ -68,11 +68,12 @@
         .footer span {
             font-weight: bold;
         }
-        .copyright {
+        .absent-list {
             font-size: 0.9em;
             color: #888;
             margin-top: 10px;
-            text-align: center;
+            text-align: left;
+            color: #c00;
         }
         @media (max-width: 768px) {
             h1 {
@@ -87,9 +88,6 @@
             .footer {
                 font-size: 0.9em;
             }
-            .copyright {
-                font-size: 0.8em;
-            }
         }
     </style>
 </head>
@@ -102,12 +100,12 @@
     <div class="room">
         <div class="room-title">4樓D1 (4425)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.張智凱(2411332007)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.林敬原(1111342043)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.湯竣頡(3311342047)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.陳建和(2411331033)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.黃羿愷(1111331039)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.何維哲(1111332033)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.張智凱(2411332007)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.林敬原(1111342043)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.湯竣頡(3311342047)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.陳建和(2411331033)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.黃羿愷(1111331039)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.何維哲(1111332033)</label>
         </div>
     </div>
 
@@ -115,12 +113,12 @@
     <div class="room">
         <div class="room-title">4樓D2 (4426)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.蔡秉呈(1111303045)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.王謙華(1111301046)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.閻畯農(1111332079)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.李誠久(1111202036)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.蔡宗翔(2411332062)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.劉冠旻(1111251104)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.蔡秉呈(1111303045)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.王謙華(1111301046)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.閻畯農(1111332079)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.李誠久(1111202036)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.蔡宗翔(2411332062)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.劉冠旻(1111251104)</label>
         </div>
     </div>
 
@@ -128,12 +126,12 @@
     <div class="room">
         <div class="room-title">4樓D3 (4427)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.陳品均(1111332021)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.陳家陞(1111332022)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.林翰廷(1111334019)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.林岑家(1111303082)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.林冠辰(1111304040)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.林暐勳(1111334035)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.陳品均(1111332021)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.陳家陞(1111332022)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.林翰廷(1111334019)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.林岑家(1111303082)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.林冠辰(1111304040)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.林暐勳(1111334035)</label>
         </div>
     </div>
 
@@ -141,12 +139,12 @@
     <div class="room">
         <div class="room-title">4樓D4 (4428)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.吳家恩(1111332083)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.林宸毅(1111351104)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.李尚恩(1111303035)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.黎聿嘉(1111332047)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.林昱丞(1411301041)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.吳秉勳(1111332034)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.吳家恩(1111332083)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.林宸毅(1111351104)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.李尚恩(1111303035)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.黎聿嘉(1111332047)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.林昱丞(1411301041)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.吳秉勳(1111332034)</label>
         </div>
     </div>
 
@@ -154,12 +152,12 @@
     <div class="room">
         <div class="room-title">4樓D5 (4429)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.黃柏遠(1111351053)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.顏毅豪(1111301052)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.林竑旭(1111332087)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.于上鈞(1111334031)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.林柏岑(1111303083)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.陳柏宇(1111351105)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.黃柏遠(1111351053)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.顏毅豪(1111301052)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.林竑旭(1111332087)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.于上鈞(1111334031)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.林柏岑(1111303083)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.陳柏宇(1111351105)</label>
         </div>
     </div>
 
@@ -167,21 +165,20 @@
     <div class="room">
         <div class="room-title">4樓D6 (4430)</div>
         <div class="student-list">
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 1.莊宜育(1411102091)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 2.潘彥呈(1111302042)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 3.林以宸(1111351103)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 4.方品右(1111342045)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 5.曾云弘(1111303089)</label>
-            <label><input type="checkbox" class="student" onchange="updateAttendance()"> 6.邵宸宇(1111334036)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 1.莊宜育(1411102091)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 2.潘彥呈(1111302042)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 3.林以宸(1111351103)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 4.方品右(1111342045)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 5.曾云弘(1111303089)</label>
+            <label><input type="checkbox" class="student" onchange="updateAttendance()" checked> 6.邵宸宇(1111334036)</label>
         </div>
     </div>
 
     <div class="footer" id="footer">
         總人數: <span id="total-count">0</span> 人 | 實到: <span id="present-count">0</span> 人 | 未到: <span id="absent-count">0</span> 人
     </div>
-
-    <div class="copyright">
-        © 2024 振東國際股份有限公司所有
+    <div class="absent-list" id="absent-list">
+        未到人員：
     </div>
 </div>
 
@@ -195,6 +192,14 @@
         document.getElementById('total-count').innerText = total;
         document.getElementById('present-count').innerText = present;
         document.getElementById('absent-count').innerText = absent;
+
+        // 更新未到人員名單
+        const absentList = Array.from(students)
+            .map((student, index) => student.checked ? null : `4D${Math.floor(index / 6) + 1}-${student.parentElement.innerText}`)
+            .filter(name => name !== null)
+            .join('<br>');
+
+        document.getElementById('absent-list').innerHTML = absentList ? `未到人員：<br>${absentList}` : "未到人員：無";
     }
 
     // 初始化統計數據
