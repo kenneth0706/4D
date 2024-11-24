@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4樓點名系統</title>
     <style>
-   /* 整體的排版和設置 */
+  /* 整體的排版和設置 */
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +70,8 @@ body {
 /* 主內容區域 */
 #main-content {
     display: none;
+    width: 100%;
+    max-width: 1000px;
 }
 
 h1 {
@@ -88,7 +90,7 @@ h1 {
 
 /* 調整容器寬度，讓主業名單框更寬 */
 .container {
-    width: 120%;
+    width: 100%;
     max-width: 900px;  /* 調整寬度使框變寬 */
     background-color: #ffffff;
     border-radius: 10px;
@@ -188,24 +190,96 @@ input[type="checkbox"] {
 }
 
 /* 響應式設計 */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8em;
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
     }
 
-    .container {
-        width: 90%;
-        padding: 20px;
+    h1 {
+        font-size: 2em;
+    }
+
+    .room-title {
+        font-size: 1.3em;
     }
 
     .student-list label {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .footer {
         font-size: 1em;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .room-title {
+        font-size: 1.2em;
+    }
+
+    .student-list label {
+        font-size: 0.9em;
+    }
+
+    .footer {
+        font-size: 0.9em;
+    }
+
+    .student-list {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .save-button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .room-title {
+        font-size: 1.1em;
+    }
+
+    .student-list label {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+
+    .save-button {
+        padding: 10px 15px;
+    }
+}
+
 
     </style>
 </head>
