@@ -21,6 +21,41 @@
             padding: 20px;
             color: #333;
         }
+         .password-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .password-screen input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .password-screen button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .password-screen button:hover {
+            background-color: #2980b9;
+        }
+        #main-content {
+            display: none; /* 初始隱藏主內容 */
+        }
         h1 {
             font-size: 2.2em;
             margin-bottom: 10px;
