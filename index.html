@@ -6,6 +6,7 @@
     <title>4樓點名系統</title>
     <style>
   /* 整體的排版和設置 */
+/* 整體的排版和設置 */
 * {
     margin: 0;
     padding: 0;
@@ -70,8 +71,6 @@ body {
 /* 主內容區域 */
 #main-content {
     display: none;
-    width: 100%;
-    max-width: 1000px;
 }
 
 h1 {
@@ -190,93 +189,28 @@ input[type="checkbox"] {
 }
 
 /* 響應式設計 */
-@media (max-width: 1024px) {
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .room-title {
-        font-size: 1.3em;
-    }
-
-    .student-list label {
-        font-size: 0.9em;
-    }
-
-    .footer {
-        font-size: 1em;
-    }
-}
-
 @media (max-width: 768px) {
     body {
-        padding: 10px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
+        padding: 20px; /* 保留邊距，避免內容直接貼邊 */
     }
 
     h1 {
         font-size: 1.8em;
     }
 
-    .room-title {
-        font-size: 1.2em;
-    }
-
-    .student-list label {
-        font-size: 0.9em;
-    }
-
-    .footer {
-        font-size: 0.9em;
-    }
-
-    .student-list {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .save-button {
-        width: 100%;
-        padding: 12px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 5px;
-    }
-
     .container {
         width: 100%;
-        padding: 8px;
-    }
-
-    h1 {
-        font-size: 1.6em;
-    }
-
-    .room-title {
-        font-size: 1.1em;
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px; /* 讓手機版的內容區有點邊距 */
     }
 
     .student-list label {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .footer {
-        font-size: 0.8em;
-    }
-
-    .save-button {
-        padding: 10px 15px;
+        font-size: 1em;
     }
 }
 
