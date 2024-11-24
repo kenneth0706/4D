@@ -227,6 +227,18 @@
 <div class="copyright">© 2024 振東國際版權所有</div>
 
 <script>
+    function verifyPassword() {
+        const inputPassword = document.getElementById('password-input').value;
+        const correctPassword = "950706";
+        if (inputPassword === correctPassword) {
+            document.getElementById('password-screen').style.display = 'none'; // 隱藏密碼畫面
+            document.getElementById('main-content').style.display = 'block'; // 顯示主內容
+            setTodayDate();
+            loadAttendance();
+        } else {
+            alert("密碼錯誤，請再試一次！");
+        }
+    }
     function updateAttendance() {
         const students = document.querySelectorAll('.student');
         const absentList = document.getElementById('absent-list');
